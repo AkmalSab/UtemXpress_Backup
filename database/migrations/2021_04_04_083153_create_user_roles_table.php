@@ -20,7 +20,7 @@ class CreateUserRolesTable extends Migration
             $table->integer('user_id');
             $table->string('staff_email')->nullable();
             $table->string('student_email')->nullable();
-
+            $table->string('admin_email')->nullable();
             $table->timestamps();
         });
 
