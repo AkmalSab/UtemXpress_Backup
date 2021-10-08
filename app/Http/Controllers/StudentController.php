@@ -600,7 +600,7 @@ class StudentController extends Controller
         $userId = Auth::id();
 
         $AllOrder = DB::table('order')
-            ->whereIn('order_status', ['completed', 'cancelled'])
+            // ->whereIn('order_status', ['completed', 'cancelled'])
             ->where('id', '=', $userId)
             ->get();
 
