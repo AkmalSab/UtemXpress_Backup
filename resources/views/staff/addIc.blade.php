@@ -93,7 +93,7 @@
                 <h5 class="modal-title" id="staticBackdropLabel">IC Front Image</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
                 <img src="{{Auth::user()->user_nric_picture_front}}" class="img-fluid" alt="showIcFront">
             </div>
         </div>
@@ -109,7 +109,7 @@
                 <h5 class="modal-title" id="staticBackdropLabel">IC Back Image</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
                 <img src="{{Auth::user()->user_nric_picture_back}}" class="img-fluid" alt="showIcBack">
             </div>
         </div>
