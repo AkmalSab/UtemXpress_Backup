@@ -87,7 +87,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img src="{{Auth::user()->user_picture}}" class="img-fluid" alt="personal_image">
+                <img src="{{Auth::user()->user_picture}}" class="img-fluid w-75 h-75" alt="personal_image">
             </div>
         </div>
     </div>
@@ -102,9 +102,9 @@
                 <h5 class="modal-title" id="staticBackdropLabel">License Front</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
                 @foreach($license as $items)
-                    <img src="{{$items->runner_license_picture_front}}" class="img-fluid" alt="vehicle_image">
+                    <img src="{{$items->runner_license_picture_front}}" class="img-fluid w-75 h-75" alt="vehicle_image">
                 @endforeach
             </div>
         </div>
@@ -120,9 +120,9 @@
                 <h5 class="modal-title" id="staticBackdropLabel">License Back</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
                 @foreach($license as $items)
-                    <img src="{{$items->runner_license_picture_back}}" class="img-fluid" alt="vehicle_image">
+                    <img src="{{$items->runner_license_picture_back}}" class="img-fluid w-75 h-75" alt="vehicle_image">
                 @endforeach
             </div>
         </div>

@@ -78,7 +78,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img src="{{Auth::user()->user_picture}}" class="img-fluid" alt="personal_image">
+                <img src="{{Auth::user()->user_picture}}" class="img-fluid w-75 h-75" alt="personal_image">
             </div>
         </div>
     </div>
@@ -93,8 +93,8 @@
                 <h5 class="modal-title" id="staticBackdropLabel">IC Front Image</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <img src="{{Auth::user()->user_nric_picture_front}}" class="img-fluid text-center" alt="showIcFront">
+            <div class="modal-body text-center">
+                <img src="{{Auth::user()->user_nric_picture_front}}" class="img-fluid w-75 h-75" alt="showIcFront">
             </div>
         </div>
     </div>
@@ -109,8 +109,8 @@
                 <h5 class="modal-title" id="staticBackdropLabel">IC Back Image</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-                <img src="{{Auth::user()->user_nric_picture_back}}" class="img-fluid text-center" alt="showIcBack">
+            <div class="modal-body text-center">
+                <img src="{{Auth::user()->user_nric_picture_back}}" class="img-fluid w-75 h-75" alt="showIcBack">
             </div>
         </div>
     </div>

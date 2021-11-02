@@ -181,9 +181,9 @@
                 <h5 class="modal-title" id="staticBackdropLabel">Vehicle Image</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
                 @foreach($vehicledDetails as $items)
-                    <img src="{{$items->vehicle_picture}}" class="img-fluid" alt="vehicle_image">
+                    <img src="{{$items->vehicle_picture}}" class="img-fluid w-75 h-75" alt="vehicle_image">
                 @endforeach
             </div>
         </div>
@@ -199,9 +199,9 @@
                 <h5 class="modal-title" id="staticBackdropLabel">Roadtax Image</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
+            <div class="modal-body text-center">
                 @foreach($vehicledDetails as $items)
-                    <img src="{{$items->vehicle_roadtax_picture}}" class="img-fluid" alt="vehicle_image">
+                    <img src="{{$items->vehicle_roadtax_picture}}" class="img-fluid w-75 h-75" alt="vehicle_image">
                 @endforeach
             </div>
         </div>

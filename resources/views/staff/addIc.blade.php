@@ -78,7 +78,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img src="{{Auth::user()->user_picture}}" class="img-fluid" alt="personal_image">
+                <img src="{{Auth::user()->user_picture}}" class="img-fluid w-75 h-75" alt="personal_image">
             </div>
         </div>
     </div>
@@ -94,7 +94,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img src="{{Auth::user()->user_nric_picture_front}}" class="img-fluid" alt="showIcFront">
+                <img src="{{Auth::user()->user_nric_picture_front}}" class="img-fluid w-75 h-75" alt="showIcFront">
             </div>
         </div>
     </div>
@@ -110,7 +110,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body text-center">
-                <img src="{{Auth::user()->user_nric_picture_back}}" class="img-fluid" alt="showIcBack">
+                <img src="{{Auth::user()->user_nric_picture_back}}" class="img-fluid w-75 h-75" alt="showIcBack">
             </div>
         </div>
     </div>

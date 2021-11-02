@@ -130,8 +130,8 @@
                     </form>
                     <hr class="hrl">
                 @endif
-                <a href="{{url('/runner/showRoute/'.$item->order_id)}}" class="btn btn-secondary">View Route</a>
                 <a href="{{url('/runner/onGoingOrder')}}" class="btn btn-primary">Back</a>
+                <a href="{{url('/runner/showRoute/'.$item->order_id)}}" class="btn btn-secondary">View Route</a>                
             </div>
             <div class="card-footer text-muted">
                 Order Date: {{date('d/m/y', strtotime($item->order_date))}} <br>
