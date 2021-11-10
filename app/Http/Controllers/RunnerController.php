@@ -390,12 +390,12 @@ class RunnerController extends Controller
             ->where('id', '=', $orders->id)
             ->first();
 
-        Mail::to($users->email)->send(new OrderDelivered($orders,$users));
+        // Mail::to($users->email)->send(new OrderDelivered($orders,$users));
 
-        $msg = "Dear ".$users->name.", Our runner has delivered your order [".$orders->order_id."]. Don't forget to leave a review to our runner.";
+        // $msg = "Dear ".$users->name.", Our runner has delivered your order [".$orders->order_id."]. Don't forget to leave a review to our runner.";
 
-        $rc = new RunnerController;
-        $rc->sendsms($users->user_phone,$msg);
+        // $rc = new RunnerController;
+        // $rc->sendsms($users->user_phone,$msg);
 
         return redirect()->back()->with('success', 'Order status has updated to "completed"');
     }
