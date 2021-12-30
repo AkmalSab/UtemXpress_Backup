@@ -87,6 +87,9 @@ class RunnerController extends Controller
             $userID = Auth::user()->id;
             $runnerID = DB::table('runner')->where('user_id', $userID)->first();
             $status = 'None';
+
+            // dd($runner->runner_id);
+
             Runner_Vehicle::create([
                 'runner_id' => $runnerID->runner_id,
                 'vehicle_type' => $req['vehicleType'],
@@ -94,6 +97,11 @@ class RunnerController extends Controller
                 'vehicle_number_plate_picture' => $status,
                 'vehicle_roadtax_picture' => $status,
             ]);
+
+            $runner = Runner::find($runnerID->runner_id);
+            $runner->runner_license_picture_front = 'none';
+            $runner->runner_license_picture_back = 'none';
+            $runner->save();
         }
         else{
             $userID = Auth::user()->id;
